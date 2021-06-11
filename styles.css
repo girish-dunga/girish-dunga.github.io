@@ -28,10 +28,10 @@ span {
   text-decoration: none;
 }
 a {
-  color: #ffffff;
+  color: #d3d3d3;
 }
 a:hover {
-  color: #d3d3d3;
+  color: #ffffff;
 }
 a.active {
   color: #ff3939;
@@ -483,8 +483,20 @@ a:hover .a_hover {
 img.home-logo {
   width: 60px;
 }
-.connect-logo {
+img.connect-logo {
   width: 60px;
+}
+.quick-connect img {
+  width: 100px;
+  border-radius: 7px;
+}
+.quick-connect h3 {
+  color: #fff;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
 }
 .home-container {
   height: 100vh;
@@ -644,7 +656,7 @@ img.home-logo {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
 }
 .connect-content {
   text-align: center;
@@ -689,10 +701,27 @@ img.home-logo {
   display: none;
 }
 .connect-nav-link {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.09px;
   padding: 0 15px;
+}
+.connect-contact a {
+  padding: 0 20px;
+}
+.quick-connect img {
+  width: 190px;
+  border-radius: 7px;
+}
+.quick-connect h3 {
+  color: #fff;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
 }
 /* Connect Styles end */
 
@@ -724,6 +753,18 @@ img.home-logo {
   font-weight: 300;
   line-height: 36px;
   margin-top: -18px;
+}
+.connect-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+.connect-footer-links {
+  position: absolute;
+  bottom: 50px;
 }
 /* Responsive Media Queries */
 @media (max-width: 1280px) {
