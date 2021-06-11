@@ -976,6 +976,22 @@ img.connect-logo {
     line-height: 44px;
   } */
 }
+@media (max-width: 640px) {
+  .connect-contact {
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    padding-bottom: 20px;
+  }
+  .connect-contact a {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
 @media (max-width: 400px) {
   .home-footer-quote {
     letter-spacing: 0;
