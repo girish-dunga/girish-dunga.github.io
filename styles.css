@@ -803,6 +803,9 @@ img.connect-logo {
   .qr-code {
     pointer-events: none;
   }
+  .back-to-top {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .desktop-only {
@@ -815,6 +818,15 @@ img.connect-logo {
   body {
     overflow: auto;
     background: #23252b;
+  }
+
+  .back-to-top {
+    display: block;
+    text-align: center;
+    padding: 0 0 30px;
+  }
+  .back-top {
+    color: #757575;
   }
   .scan-tap-txt {
     color: #757575;
@@ -893,8 +905,10 @@ img.connect-logo {
     border: 2px solid #888;
     position: relative;
     color: #fff;
-    padding: 10px 20px;
+    padding: 11px 20px;
     text-transform: uppercase;
+    height: 45px;
+    border-radius: 8px;
   }
   .panel-active-tab-dd::before {
     content: "";
@@ -921,6 +935,8 @@ img.connect-logo {
     width: calc(100% - 60px);
     left: 30px;
     border: 2px solid #888;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
   .panel-active-tab-dd.active + .panel-tabs-list {
     display: block;
@@ -1030,6 +1046,22 @@ img.connect-logo {
   }
   .modal-card-close {
     right: 0;
+  }
+  .quick-connect h3 {
+    color: #d3d3d3;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    /* font-weight: 300; */
+    letter-spacing: 1.8px;
+  }
+  .grid-card-content {
+    justify-content: center;
+  }
+  .grid-card {
+    background: transparent;
   }
 }
 @media (max-width: 640px) {
