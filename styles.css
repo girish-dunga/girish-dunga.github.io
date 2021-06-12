@@ -675,6 +675,8 @@ img.connect-logo {
   flex: 1;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .connect-msg {
   color: #ffffff;
@@ -693,7 +695,7 @@ img.connect-logo {
 .connect-nav {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 40px;
 }
 .connect-nav-item {
   position: relative;
@@ -771,8 +773,8 @@ img.connect-logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  flex: 1;
+  /* height: 100%;
+  flex: 1; */
 }
 /* .connect-footer-links {
   position: absolute;
@@ -794,6 +796,14 @@ img.connect-logo {
     margin: 0 10px;
   }
 }
+@media (min-width: 769px) {
+  .scan-tap-txt {
+    display: none;
+  }
+  .qr-code {
+    pointer-events: none;
+  }
+}
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
@@ -805,6 +815,17 @@ img.connect-logo {
   body {
     overflow: auto;
     background: #23252b;
+  }
+  .scan-tap-txt {
+    color: #757575;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 8px;
+    display: block;
+  }
+  .qr-code {
+    pointer-events: all;
   }
   /*Panel Responsive Styles*/
   .panel-container {
@@ -919,18 +940,18 @@ img.connect-logo {
   }
   /* Home Page Responsive Styles */
   .home-name {
-    font-size: 24px;
+    font-size: 34px;
     line-height: 32px;
     letter-spacing: 3.4px;
-    padding-top: 12px;
+    padding-top: 20px;
   }
   .designation {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1.2px;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 1.28px;
   }
   .home-nav-link {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     padding: 0 15px;
   }
@@ -950,6 +971,7 @@ img.connect-logo {
     height: calc(100vh - 57px);
   }
   .home-wrapper {
+    padding: 50px ​0 20px;
     min-height: calc(100vh - 100px);
   }
   .connect-wrapper {
