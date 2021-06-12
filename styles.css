@@ -804,6 +804,7 @@ img.connect-logo {
   html,
   body {
     overflow: auto;
+    background: #23252b;
   }
   /*Panel Responsive Styles*/
   .panel-container {
@@ -930,11 +931,17 @@ img.connect-logo {
   .home-content {
     padding-top: 0;
   }
+  .home-container {
+    height: calc(100vh - 57px);
+  }
+  .connect-container {
+    height: calc(100vh - 57px);
+  }
   .home-wrapper {
     min-height: calc(100vh - 100px);
   }
   .connect-wrapper {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 100px);
   }
   /*About Page Responsive Styles*/
   .about-me-content {
