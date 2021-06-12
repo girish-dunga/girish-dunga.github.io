@@ -122,7 +122,7 @@
 }
 @media (max-width: 768px) {
   .modal-card-body .slick-prev {
-    right: -36px;
+    left: -36px;
     width: 20px;
     font-size: 0;
     color: transparent;
