@@ -927,6 +927,15 @@ img.connect-logo {
     font-weight: 300;
     letter-spacing: 0.8px;
   }
+  .home-content {
+    padding-top: 0;
+  }
+  .home-wrapper {
+    min-height: calc(100vh - 100px);
+  }
+  .connect-wrapper {
+    min-height: calc(100vh - 150px);
+  }
   /*About Page Responsive Styles*/
   .about-me-content {
     padding-top: 10px;
