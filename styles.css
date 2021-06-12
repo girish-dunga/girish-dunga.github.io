@@ -833,7 +833,17 @@ img.connect-logo {
     background: #000000;
   }
   .left-panel-menu-link {
-    padding: 6px 8px;
+    padding: 20px 20px 15px;
+    line-height: 100%;
+  }
+  .left-panel-menu-link.active:after,
+  .left-panel-menu-link:hover {
+    width: calc(100% - 40px);
+    height: 2px;
+    top: auto;
+    bottom: 0;
+    left: 20px;
+    margin: 0;
   }
   .left-panel-home-icon {
     display: inline-block;
@@ -859,16 +869,17 @@ img.connect-logo {
   .panel-active-tab-dd {
     display: block;
     margin: 5px 30px 15px;
-    border: 2px solid #23252b;
+    border: 2px solid #888;
     position: relative;
     color: #fff;
     padding: 10px 20px;
+    text-transform: uppercase;
   }
   .panel-active-tab-dd::before {
     content: "";
     height: 0;
     width: 0;
-    border-top: 6px solid #23252b;
+    border-top: 6px solid #888;
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
     right: 10px;
@@ -877,7 +888,7 @@ img.connect-logo {
     margin-top: -3px;
   }
   .panel-active-tab-dd.active::before {
-    border-bottom: 6px solid #23252b;
+    border-bottom: 6px solid #888;
     border-top: 0;
   }
   .panel-tabs-list {
@@ -888,7 +899,7 @@ img.connect-logo {
     top: 40px;
     width: calc(100% - 60px);
     left: 30px;
-    border: 2px solid #23252b;
+    border: 2px solid #888;
   }
   .panel-active-tab-dd.active + .panel-tabs-list {
     display: block;
@@ -904,6 +915,7 @@ img.connect-logo {
     padding: 5px 20px;
     line-height: 32px;
     font-size: 16px;
+    border: 0;
   }
   /* Home Page Responsive Styles */
   .home-name {
@@ -991,18 +1003,12 @@ img.connect-logo {
   .modal-work-details li:after {
     display: none;
   }
-
-  /* .modal-work-details li,
-  .modal-work-skills,
-  .modal-case-study,
-  .modal-info-description {
-    font-size: 21px;
-    line-height: 36px;
+  .modal-card-header {
+    padding: 30px 0;
   }
-  .modal-info-title {
-    font-size: 27px;
-    line-height: 44px;
-  } */
+  .modal-card-close {
+    right: 0;
+  }
 }
 @media (max-width: 640px) {
   .connect-contact {
