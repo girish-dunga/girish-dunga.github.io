@@ -69,6 +69,10 @@ $(function () {
         loadActiveTab();
     });
 
+    $(document).on('click', '.back-top', function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+    });
+
     // For mobile tab dropdown options toggling
     $(document).on('click', '.panel-active-tab-dd', function () {
         $(this).toggleClass('active');
