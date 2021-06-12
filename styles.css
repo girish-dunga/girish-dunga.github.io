@@ -53,6 +53,9 @@ a:hover .a_hover {
   justify-content: center;
   align-items: center;
 }
+.home-loader img {
+  width: 120px;
+}
 /* Loader Styles end */
 
 /*Common Pages Styles start */
@@ -507,14 +510,16 @@ img.connect-logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  min-height: 100vh;
+  padding: 20px 0;
+  height: 100%;
+  min-height: calc(100vh - 40px);
 }
 .home-content {
   text-align: center;
   flex: 1;
   display: flex;
   align-items: center;
+  padding-top: 50px;
 }
 .home-name {
   color: #ffffff;
@@ -662,7 +667,7 @@ img.connect-logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  /* padding: 30px; */
   min-height: calc(100vh - 75px);
 }
 .connect-content {
@@ -769,10 +774,10 @@ img.connect-logo {
   height: 100%;
   flex: 1;
 }
-.connect-footer-links {
+/* .connect-footer-links {
   position: absolute;
   bottom: 50px;
-}
+} */
 /* Responsive Media Queries */
 @media (max-width: 1280px) {
   .panel-tab-link {
