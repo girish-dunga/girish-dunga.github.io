@@ -120,3 +120,17 @@
     right: -70px;
   }
 }
+@media (max-width: 768px) {
+  .modal-card-body .slick-prev {
+    right: -36px;
+    width: 20px;
+    font-size: 0;
+    color: transparent;
+  }
+  .modal-card-body .slick-next {
+    right: -36px;
+    width: 20px;
+    font-size: 0;
+    color: transparent;
+  }
+}
