@@ -837,7 +837,7 @@ img.connect-logo {
     line-height: 100%;
   }
   .left-panel-menu-link.active:after,
-  .left-panel-menu-link:hover {
+  .left-panel-menu-link:hover::after {
     width: calc(100% - 40px);
     height: 2px;
     top: auto;
