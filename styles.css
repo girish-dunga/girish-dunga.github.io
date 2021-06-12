@@ -824,8 +824,11 @@ img.connect-logo {
     display: block;
     text-align: center;
     padding: 0 0 30px;
+    color: #757575;
   }
-  .back-top {
+  .back-top,
+  .back-top:focus,
+  .back-top:hover {
     color: #757575;
   }
   .scan-tap-txt {
