@@ -42,6 +42,38 @@ $(window).on('load', function () {
 });
 
 $(function () {
+    console.log(" :::: AVAILABLE THEMES :::: ");
+    console.log("%c%s%c%s",
+        "background:#a6ff00;color:#000;padding:4px 10px;font-weight:bold;border-radius:4px;margin-right:10px;border:1px solid #a6ff00",
+        "GREEN",
+        "background:transparent;color:#a6ff00;padding:4px 10px;border-radius:4px;color:#a6ff00;font-weight:bold;border:1px solid #a6ff00",
+        "?theme=green");
+    console.log("%c%s%c%s",
+        "background:#00d5d5;color:#000;padding:4px 10px;font-weight:bold;border-radius:4px;margin-right:10px;border:1px solid #00d5d5",
+        "AQUA",
+        "background:transparent;color:#00d5d5;padding:4px 10px;border-radius:4px;color:#00d5d5;font-weight:bold;border:1px solid #00d5d5",
+        "?theme=aqua");
+    console.log("%c%s%c%s",
+        "background:#ffb900;color:#000;padding:4px 10px;font-weight:bold;border-radius:4px;margin-right:10px;border:1px solid #ffb900",
+        "YELLOW",
+        "background:transparent;color:#ffb900;padding:4px 10px;border-radius:4px;color:#ffb900;font-weight:bold;border:1px solid #ffb900",
+        "?theme=yellow");
+    console.log("%c%s%c%s",
+        "background:#00A4EF;color:#000;padding:4px 10px;font-weight:bold;border-radius:4px;margin-right:10px;border:1px solid #00A4EF",
+        "BLUE",
+        "background:transparent;color:#00A4EF;padding:4px 10px;border-radius:4px;color:#00A4EF;font-weight:bold;border:1px solid #00A4EF",
+        "?theme=blue");
+    var queryParam = window.location.search,
+        qpArr = queryParam.split('&'),
+        theme = '';
+    if (qpArr.length) {
+        qpArr.forEach(el => {
+            if (el.indexOf('theme=') > -1) {
+                theme = el.split('theme=')[1].toLowerCase();
+            }
+        });
+    }
+    $('body').attr('data-theme', theme)
     // To load page with #pageName
     $(window).on('hashchange', function (e) {
         if (e.originalEvent.newURL !== e.originalEvent.oldURL) {
