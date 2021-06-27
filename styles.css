@@ -494,12 +494,21 @@ img.connect-logo {
   border-radius: 7px;
 }
 .quick-connect h3 {
-  color: #fff;
+  /* color: #fff;
   padding-bottom: 20px;
   padding-top: 5px;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 14px; */
+  /* padding-bottom: 20px;
+  padding-top: 5px; */
+  font-weight: 400;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px !important;
+  padding: 8px;
+  display: block;
 }
 .home-container {
   height: 100vh;
@@ -728,7 +737,7 @@ img.connect-logo {
   border-radius: 7px;
 }
 .quick-connect h3 {
-  color: #fff;
+  color: #aaa;
   padding-bottom: 20px;
   padding-top: 5px;
   text-transform: uppercase;
@@ -781,12 +790,12 @@ img.connect-logo {
   bottom: 50px;
 } */
 /* Responsive Media Queries */
-@media (min-width: 1281px) {
+/* @media (min-width: 1281px) {
   .grid-card {
     max-width: 30%;
     height: auto;
   }
-}
+} */
 @media (max-width: 1280px) {
   .panel-tab-link {
     padding: 0 0 15px;
@@ -852,10 +861,16 @@ img.connect-logo {
     color: #757575;
   }
   .scan-tap-txt {
-    color: #757575;
+    /* color: #757575;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 15px;
+    padding: 8px;
+    display: block; */
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
     padding: 8px;
     display: block;
   }
@@ -935,19 +950,18 @@ img.connect-logo {
   }
   .panel-active-tab-dd::before {
     content: "";
-    height: 0;
-    width: 0;
-    border-top: 6px solid #888;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
-    right: 10px;
+    height: 16px;
+    width: 16px;
+    background: url(downarrow.svg) no-repeat center center/contain;
+    right: 20px;
     position: absolute;
     top: 50%;
-    margin-top: -3px;
+    margin-top: -8px;
   }
   .panel-active-tab-dd.active::before {
-    border-bottom: 6px solid #888;
-    border-top: 0;
+    /* border-bottom: 6px solid #888;
+    border-top: 0; */
+    transform: rotate(180deg);
   }
   .panel-tabs-list {
     display: none;
@@ -1071,7 +1085,7 @@ img.connect-logo {
     right: 0;
   }
   .quick-connect h3 {
-    color: #d3d3d3;
+    color: #aaa;
     padding-bottom: 20px;
     padding-top: 5px;
     text-transform: uppercase;
